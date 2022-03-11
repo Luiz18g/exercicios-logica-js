@@ -1,31 +1,17 @@
-let n1
-let n2
-let n3
-let n4
-let media
-
-console.log("Informe um nota!")
-n1 = 10
-console.log("a nota informada foi",n1)
-
-console.log("Informe a segunda nota!")
-n2 = 10
-console.log("a segunda nota informada foi",n2)
-
-console.log("Informe a terceira nota!")
-n3 = 10
-console.log("a terceira nota informada foi",n3)
-
-console.log("Informe a quarta nota!")
-n4 = 10
-console.log("a quarta nota informada foi",n4)
-
-media = (n1 + n2 + n3 + n4)/4
-if(media >= 7){
-    console.log("Aprovado")
-} else {
-    if(media <= 6) {
-       console.log("Reprovado")
-    }
+function media(nota1,nota2,nota3,nota4){
+    nota1 = parseFloat(nota1)
+    nota2 = parseFloat(nota2)
+    nota3 = parseFloat(nota3)
+    nota4 = parseFloat(nota4)
+    let media
+    document.querySelector("#resultado").innerHTML="Digite a 1 nota" + nota1
+    
+    document.querySelector("#resultado").innerHTML="Digite a 2 nota" + nota2
+    
+    document.querySelector("#resultado").innerHTML="Digite a 3 nota" + nota3
+    
+    document.querySelector("#resultado").innerHTML="Digite a 4 nota" + nota4
+    
+    media =(nota1 + nota2 + nota3 + nota4) / 4
+    document.querySelector("#resultado").innerHTML="A media do aluno e" + media
 }
-

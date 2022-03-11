@@ -1,10 +1,13 @@
-let metros
-let centimetros
+function conversaoMetroCentimetro(){
+   
+    let centimetro,metros,conversao
+    
+    conversaoMetroCentimetro = document.querySelector("#conversaoMetroCentimetro").value
+    conversao = parsefloat(conversao)
+    metros = document.querySelector("#metros").innerHTML="Digite o valor em metro para converter em centimetros"
+    
+    conversao = metros * 100
+    
+    centimetro = document.querySelector("#convertido").innerHTML="valor convertido" + conversao
 
-console.log("Informe o metro para converter em centimetro")
-metro=100
-
-centimetro = metro * 100
-console.log(centimetro + 'cm')
-
-console.log("A conversão para centimetro e:",centimetro)
+}

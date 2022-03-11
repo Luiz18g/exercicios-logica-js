@@ -1,14 +1,16 @@
-let n1
-let n2
-let soma
+function soma(num1,num2){
+   
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
+    let soma
+    
+    document.querySelector("#resultado").innerHTML = "Digite qualquer numero" + num1
 
-console.log("Informe um número!")
-n1 = 10
-console.log("O número informado foi",n1)
+    document.querySelector("#resultado").innerHTML = "Digite qualquer numero" + num2
+    
+    soma = num1+num2
 
-console.log("Informe outro número!")
-n2 = 20
-console.log("O número informado foi",n2)
+    document.querySelector("#resultado").innerHTML = "A soma dos dois e =" + soma
 
-soma = n1 + n2
-console.log("A soma dos números é",soma)
+
+}

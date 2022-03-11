@@ -1,4 +1,4 @@
-let n1
-console.log("Informe um número!")
-n1 = 10
-console.log("O número informado foi",n1)
+function exibir(n1=0){
+    document.querySelector("#resultado").innerHTML = "O numero informado foi" + n1
+}
+
